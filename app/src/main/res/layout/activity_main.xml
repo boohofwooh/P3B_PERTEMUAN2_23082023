@@ -36,5 +36,17 @@
         android:layout_weight="1"
         android:layout_margin="5dp"/>
 
+
+
 </LinearLayout>
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+    <Button
+        android:id="@+id/btn_get_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET EMAIL"/>
 </LinearLayout>

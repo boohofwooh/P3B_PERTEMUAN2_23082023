@@ -18,7 +18,10 @@ class MainActivity : AppCompatActivity() {
         with(binding){
             txtNumber.text = number.toString()
             txtNumber.setBackgroundResource(R.color.purple_500)
-            
+
+            btnGetText.setOnClickListener {
+
+            }
             btnCount.setOnClickListener {
                 number++
                 txtNumber.text = number.toString()
