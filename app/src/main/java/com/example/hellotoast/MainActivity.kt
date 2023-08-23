@@ -17,14 +17,15 @@ class MainActivity : AppCompatActivity() {
 
         with(binding){
             txtNumber.text = number.toString()
+            txtNumber.setBackgroundResource(R.color.purple_500)
+            
             btnCount.setOnClickListener {
                 number++
                 txtNumber.text = number.toString()
             }
             btnToast.setOnClickListener {
-                Toast.makeText(this@MainActivity, number.toString(),Toast.LENGTH_SHORT)
+                Toast.makeText(this@MainActivity, "last count: $number",Toast.LENGTH_SHORT).show()
             }
         }
-        setContentView(R.layout.activity_main)
     }
 }
